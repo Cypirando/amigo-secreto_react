@@ -5,6 +5,7 @@ export const Banner = () => {
     return (
         <header className="banner">
             <img src="/images/bot-logo.jpg" alt="O banner principal da página do Botdesigner"/>
+            <h1>Sorteio Para Amigo Secreto</h1>
         </header>
     )
 }

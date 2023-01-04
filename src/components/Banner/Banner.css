@@ -7,3 +7,7 @@
 .banner img {
     max-width: 80%;
 }
+.banner h1 {
+    color: midnightblue;
+    font-family:system-ui;
+}
