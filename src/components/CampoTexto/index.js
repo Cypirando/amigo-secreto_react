@@ -5,9 +5,8 @@ const CampoTexto = (props) => {
 
   // let valor = 'Fábio Cypriano'
 
-
   const aoDigitado = (evento) => {
-   props.aoAlterado(evento.target.value)
+    props.aoAlterado(evento.target.value);
   };
 
   return (

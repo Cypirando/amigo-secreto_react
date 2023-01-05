@@ -1,0 +1,10 @@
+.participantes{
+    text-align: center;
+    padding: 32px;
+}
+.participantes h3{
+    font-size: 22px;
+    border-bottom: 4px solid;
+    display: inline-block;
+    padding-bottom: 8px;
+}

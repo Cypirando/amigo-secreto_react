@@ -3,14 +3,19 @@ import Botao from "../Botao";
 import CampoTexto from "../CampoTexto";
 import "./Formulario.css";
 
-const Formulario = () => {
+const Formulario = (props) => {
   const [nome, setNome] = useState("");
   const [email, setEmail] = useState("");
   const [presente, setPresente] = useState("");
 
   const aoSalvar = (evento) => {
     evento.preventDefault();
-    console.log("Form foi submetido=",nome,email,presente);
+    props.aoColaboradorCadastrado({
+      nome,
+      email,
+      presente,
+    });
+    console.log("Form foi submetido=", nome, email, presente);
   };
 
   return (

@@ -1,13 +1,14 @@
 .banner {
-    background-color: #fff;
-    text-align: center;
-    margin: 16px 0;
+    background-color: #2A3F5C;
+    text-align:center;
+    padding: 20px 20px 1px 20px;
 }
 
 .banner img {
-    max-width: 80%;
+    display: grid;
+    max-width: 20%;
 }
 .banner h1 {
-    color: midnightblue;
+    color: white;
     font-family:system-ui;
 }
