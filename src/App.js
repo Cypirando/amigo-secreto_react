@@ -32,6 +32,7 @@ function App() {
           nome={participante.nome}
           corPrimaria={participante.corPrimaria}
           corSecundaria={participante.corSecundaria}
+          colaboradores={colaboradores}
         />
       ))}
     </div>

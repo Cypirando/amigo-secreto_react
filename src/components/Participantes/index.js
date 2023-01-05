@@ -7,7 +7,7 @@ const Participantes = (props) => {
     return (
         <section className='participantes' style={primaria}>
             <h3 style={secundaria}>{props.nome}</h3>
-            <Participante />    
+            {props.colaboradores.map(participante => <Participante />)}  
         </section>
     )
 

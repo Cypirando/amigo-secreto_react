@@ -7,6 +7,8 @@ const Formulario = (props) => {
   const [nome, setNome] = useState("");
   const [email, setEmail] = useState("");
   const [presente, setPresente] = useState("");
+  const [foto, setFoto] = useState("");
+
 
   const aoSalvar = (evento) => {
     evento.preventDefault();
@@ -42,6 +44,12 @@ const Formulario = (props) => {
           valor={presente}
           aoAlterado={(valor) => setPresente(valor)}
         />
+        <CampoTexto
+        label="Foto"
+        placeholder="Adicione sua foto aqui"
+        valor={foto}
+        aoAlterado={(valor) => setFoto(valor)}
+      />
         <Botao>Criar Sorteio</Botao>
       </form>
     </section>
