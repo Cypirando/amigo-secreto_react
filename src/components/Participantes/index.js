@@ -1,3 +1,4 @@
+import Participante from '../Participante'
 import './Participantes.css'
 
 const Participantes = (props) => {
@@ -6,7 +7,7 @@ const Participantes = (props) => {
     return (
         <section className='participantes' style={primaria}>
             <h3 style={secundaria}>{props.nome}</h3>
-                
+            <Participante />    
         </section>
     )
 
