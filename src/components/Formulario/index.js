@@ -16,6 +16,10 @@ const Formulario = (props) => {
       email,
       presente,
     });
+    setNome('')
+    setEmail('')
+    setPresente('')
+
     console.log("Form foi submetido=", nome, email, presente);
   };
 

@@ -9,7 +9,7 @@ const Participantes = (props) => {
       <h3 style={secundaria}>{props.nome}</h3>
       <div className="colaboradores">
         {props.colaboradores.map((participante) => (
-          <Participante nome={participante.nome} email={participante.email} />
+          <Participante key={participante.nome} nome={participante.nome} email={participante.email} />
         ))}
       </div>
     </section>

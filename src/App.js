@@ -2,6 +2,7 @@ import { useState } from "react";
 import Banner from "./components/Banner";
 import Formulario from "./components/Formulario";
 import Participantes from "./components/Participantes";
+import Rodape from "./components/rodape";
 
 function App() {
   const participantes = [
@@ -35,6 +36,7 @@ function App() {
           colaboradores={colaboradores}
         />
       ))}
+      <Rodape/>
     </div>
   );
 }
