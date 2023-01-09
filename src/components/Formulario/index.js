@@ -47,7 +47,7 @@ const Formulario = (props) => {
           valor={presente}
           aoAlterado={(valor) => setPresente(valor)}
         />
-        <Botao>Criar Sorteio</Botao>
+        <Botao>Adicionar</Botao>
       </form>
     </section>
   );
