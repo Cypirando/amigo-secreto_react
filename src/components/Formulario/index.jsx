@@ -51,12 +51,12 @@ const Formulario = (props) => {
           valor={presente}
           aoAlterado={(valor) => setPresente(valor)}
         />
-        <CampoTexto
+        {/* <CampoTexto
           label="Imagem"
           placeholder="coloque o endereço da imagem "
           valor={imagem}
           aoAlterado={(valor) => setImagem(valor)}
-        />
+        /> */}
         <Botao>Adicionar</Botao>
       </form>
     </section>

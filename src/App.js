@@ -1,4 +1,5 @@
 import { useState } from "react";
+import './components/style/estilosGlobais.scss'
 import Banner from "./components/Banner";
 import Formulario from "./components/Formulario";
 import Participantes from "./components/Participantes";

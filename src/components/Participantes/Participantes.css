@@ -7,6 +7,7 @@
     border-bottom: 4px solid;
     display: inline-block;
     padding-bottom: 8px;
+    font-family:"GandhiSansRegular";
 }
 .participantes .colaboradores{
     display: flex;

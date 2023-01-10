@@ -11,3 +11,6 @@
     padding: 36px 64px;
     box-shadow: 8px 8px 16px rgba(0,0,0, 0.08);
 }
+.formulario h2 {
+    font-family:"GandhiSansBold";
+}
