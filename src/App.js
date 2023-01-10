@@ -1,10 +1,12 @@
 import { useState } from "react";
-import './components/style/estilosGlobais.scss'
+import "./components/style/estilosGlobais.scss";
 import Banner from "./components/Banner";
 import Formulario from "./components/Formulario";
 import Participantes from "./components/Participantes";
 import Rodape from "./components/rodape";
 import { v4 as uuidv4 } from "uuid";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Menu from "./components/menu";
 
 function App() {
   const participantes = [
@@ -20,7 +22,7 @@ function App() {
       id: uuidv4(),
       nome: "JULIANA AMOASEI",
       email: "julinan@gmail.com",
-      presnte: "Bola"
+      presnte: "Bola",
     },
   ];
 
@@ -38,25 +40,41 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <BrowserRouter>
       <Banner />
-      <Formulario
-        aoColaboradorCadastrado={(colaborador) =>
-          setColaboradores([...colaboradores, colaborador])
-        }
-      />
-      {participantes.map((participante,indice) => (
-        <Participantes
-          key={indice}
-          nome={participante.nome}
-          corPrimaria={participante.corPrimaria}
-          corSecundaria={participante.corSecundaria}
-          colaboradores={colaboradores}
-          aoDeletar={deletarColaborador}
+      <Menu/>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <div className="App">
+            
+              <Formulario
+                aoColaboradorCadastrado={(colaborador) =>
+                  setColaboradores([...colaboradores, colaborador])
+                }
+              />
+              
+            </div>
+          }
         />
-      ))}
+        <Route
+          path="/participantes"
+          element={
+            participantes.map((participante, indice) => (
+            <Participantes
+              key={indice}
+              nome={participante.nome}
+              corPrimaria={participante.corPrimaria}
+              corSecundaria={participante.corSecundaria}
+              colaboradores={colaboradores}
+              aoDeletar={deletarColaborador}
+            />
+          ))}
+        />
+      </Routes>
       <Rodape />
-    </div>
+    </BrowserRouter>
   );
 }
 
