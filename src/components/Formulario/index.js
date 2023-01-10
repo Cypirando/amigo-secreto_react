@@ -2,6 +2,7 @@ import { useState } from "react";
 import Botao from "../Botao";
 import CampoTexto from "../CampoTexto";
 import "./Formulario.css";
+import { v4 as uuidv4 } from 'uuid';
 
 const Formulario = (props) => {
   const [nome, setNome] = useState("");
@@ -12,6 +13,7 @@ const Formulario = (props) => {
   const aoSalvar = (evento) => {
     evento.preventDefault();
     props.aoColaboradorCadastrado({
+      id:uuidv4(),
       nome,
       email,
       presente,

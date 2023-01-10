@@ -8,7 +8,9 @@ const Participante = (props) => {
 <MdPersonRemoveAlt1
         size={25}
         className="deletar"
-        onClick={() => props.aoDeletar(props.id)}
+        onClick={() => {
+            console.log(props.id)
+            props.aoDeletar(props.id)}}
       />
       <div className="cabecalho" style={{ backgroundColor: props.corDeFundo }}>
         <img src={props.imagem} alt={props.nome} />

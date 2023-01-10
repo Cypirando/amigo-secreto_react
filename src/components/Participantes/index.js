@@ -1,5 +1,7 @@
 import Participante from "../Participante";
 import "./Participantes.css";
+import { v4 as uuidv4 } from 'uuid';
+
 
 const Participantes = (props) => {
   return (
@@ -13,12 +15,15 @@ const Participantes = (props) => {
     >
       <h3 style={{ borderColor: props.corSecundaria }}>{props.nome}</h3>
       <div className="colaboradores">
-        {props.colaboradores.map((participante) => (
+        {props.colaboradores.map((participante,indice) => (
+          
           <Participante
-            key={participante.nome}
+            id={uuidv4()}
+            key={indice}
             nome={participante.nome}
             email={participante.email}
-            corDeFundo={participante.corSecundaria}
+            colaborador={participante}
+            corDeFundo={props.corSecundaria}
             aoDeletar={props.aoDeletar}
 
           />
