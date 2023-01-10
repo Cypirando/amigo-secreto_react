@@ -2,14 +2,26 @@ import Participante from "../Participante";
 import "./Participantes.css";
 
 const Participantes = (props) => {
-  const primaria = { backgroundColor: props.corPrimaria };
-  const secundaria = { borderColor: props.corSecundaria };
   return (
-    <section className="participantes" style={primaria}>
-      <h3 style={secundaria}>{props.nome}</h3>
+    <section
+      className="participantes"
+      style={{
+        backgroundImage: "url(/images/fundo.png)",
+        backgroundColor: props.corPrimaria,
+      }}
+      
+    >
+      <h3 style={{ borderColor: props.corSecundaria }}>{props.nome}</h3>
       <div className="colaboradores">
         {props.colaboradores.map((participante) => (
-          <Participante key={participante.nome} nome={participante.nome} email={participante.email} />
+          <Participante
+            key={participante.nome}
+            nome={participante.nome}
+            email={participante.email}
+            corDeFundo={participante.corSecundaria}
+            aoDeletar={props.aoDeletar}
+
+          />
         ))}
       </div>
     </section>

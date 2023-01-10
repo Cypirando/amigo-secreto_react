@@ -15,16 +15,19 @@ function App() {
 
   const [colaboradores, setColaboradores] = useState([]);
 
-  const aoNovoColaboradorAdicionado = (colaborador) => {
-    console.log(colaborador);
-    setColaboradores([...colaboradores, colaborador]);
-  };
+  function deletarColaborador(id) {
+    setColaboradores(
+      colaboradores.filter((colaborador) => colaborador.id !== id)
+    );
+    console.log(setColaboradores);
+  }
+
   return (
     <div className="App">
       <Banner />
       <Formulario
         aoColaboradorCadastrado={(colaborador) =>
-          aoNovoColaboradorAdicionado(colaborador)
+          setColaboradores([...colaboradores, colaborador])
         }
       />
       {participantes.map((participante) => (
@@ -34,9 +37,10 @@ function App() {
           corPrimaria={participante.corPrimaria}
           corSecundaria={participante.corSecundaria}
           colaboradores={colaboradores}
+          aoDeletar={deletarColaborador}
         />
       ))}
-      <Rodape/>
+      <Rodape />
     </div>
   );
 }
