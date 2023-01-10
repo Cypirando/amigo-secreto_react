@@ -1,28 +1,25 @@
 import { MdPersonRemoveAlt1 } from "react-icons/md";
-import './Participante.css'
+import "./Participante.css";
 
-const Participante = (props) => {
-    return (
-        <div className='colaborador'>
-
-<MdPersonRemoveAlt1
+const Participante = ({colaborador,corDeFundo,aoDeletar}) => {
+  console.log(colaborador)
+  return (
+    <div className="colaborador">
+      <MdPersonRemoveAlt1
         size={25}
         className="deletar"
-        onClick={() => {
-            console.log(props.id)
-            props.aoDeletar(props.id)}}
+        onClick={() => aoDeletar(colaborador.id)}
       />
-      <div className="cabecalho" style={{ backgroundColor: props.corDeFundo }}>
-        <img src={props.imagem} alt={props.nome} />
+      <div className="cabecalho" style={{ backgroundColor:corDeFundo }}>
+        <img src={colaborador.imagem} alt={colaborador.nome} />
       </div>
 
-            <div className='rodape'>
-                <h4>{props.nome}</h4>
-                <h5>{props.email}</h5>
-            </div>
-        </div>
-    )
+      <div className="rodape">
+        <h4>{colaborador.nome}</h4>
+        <h5>{colaborador.email}</h5>
+      </div>
+    </div>
+  );
+};
 
-}
-
-export default Participante
+export default Participante;

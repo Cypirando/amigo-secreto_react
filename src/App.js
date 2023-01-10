@@ -19,9 +19,7 @@ function App() {
       id: uuidv4(),
       nome: "JULIANA AMOASEI",
       email: "julinan@gmail.com",
-      presnte: "Bola",
-      imagem:
-        "https://www.alura.com.br/assets/img/lideres/juliana-amoasei.1647533644.jpeg",
+      presnte: "Bola"
     },
   ];
 
