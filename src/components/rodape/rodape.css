@@ -3,10 +3,13 @@
 .footer {
     background: #6278F7;
     color: #FFF;
-    padding:80px 80px 5px 80px;
+    padding:6px 24px 6px 24px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    bottom: 0;
+    min-width: 100%;
 }
 
 .footer ul li {
@@ -16,4 +19,7 @@
 
 .footer ul li:last-child {
     margin-right: 0;
+}
+.footer p{
+    padding: 0 80px;
 }

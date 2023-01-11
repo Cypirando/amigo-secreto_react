@@ -8,7 +8,7 @@ const Rodape = () => {
             <ul>
                 <li>
                     <a href="facebook.com" target="_blank">
-                        <img src="/images/fb.png" alt="facebook" />
+                        <img src="../images/icones/home.png" alt="facebook" />
                     </a>
                 </li>
             </ul>
