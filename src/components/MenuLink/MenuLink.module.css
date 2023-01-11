@@ -1,0 +1,8 @@
+.link {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    color: wheat;
+}
+.linkDestacado{
+    text-decoration: underline;
+}

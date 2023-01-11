@@ -6,9 +6,9 @@ import Participantes from "./components/Participantes";
 import Rodape from "./components/rodape";
 import { v4 as uuidv4 } from "uuid";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Menu from "./components/menu";
+import Menu from "./components/Menu";
 
-function App() {
+function AppRoutes() {
   const participantes = [
     {
       nome: "Participantes",
@@ -78,4 +78,4 @@ function App() {
   );
 }
 
-export default App;
+export default AppRoutes;
