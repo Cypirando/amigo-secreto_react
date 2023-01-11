@@ -1,8 +1,8 @@
 import { MdPersonRemoveAlt1 } from "react-icons/md";
 import "./Participante.css";
 
-const Participante = ({colaborador,corDeFundo,aoDeletar}) => {
-  console.log(colaborador)
+const Participante = ({ colaborador, corDeFundo, aoDeletar }) => {
+  console.log( colaborador);
   return (
     <div className="colaborador">
       <MdPersonRemoveAlt1
@@ -10,7 +10,7 @@ const Participante = ({colaborador,corDeFundo,aoDeletar}) => {
         className="deletar"
         onClick={() => aoDeletar(colaborador.id)}
       />
-      <div className="cabecalho" style={{ backgroundColor:corDeFundo }}>
+      <div className="cabecalho" style={{ backgroundColor: corDeFundo }}>
         <img src={colaborador.imagem} alt={colaborador.nome} />
       </div>
 

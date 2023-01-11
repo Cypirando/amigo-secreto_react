@@ -3,7 +3,7 @@ import "./Participantes.css";
 // import { v4 as uuidv4 } from "uuid";
 
 const Participantes = ({aoDeletar,colaboradores,corPrimaria,corSecundaria}) => {
-  console.log(colaboradores)
+  console.log("arrai com a lista=",colaboradores)
   return (
     <section
       className="participantes"
