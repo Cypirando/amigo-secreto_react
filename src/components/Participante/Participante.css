@@ -4,10 +4,11 @@
 }
 
 .colaborador .cabecalho {
+    height: 24px;
     background-color: #6278f7;
     border-radius: 10px 10px 0px 0px;
 }
-.colaborador img {
+.colaborador span {
     width: 100px;
     border-radius: 50%;
     position: relative;
@@ -18,23 +19,23 @@
     background: #ffffff;
     box-shadow: 5px 5px 15px rgba(0,0,0,0.08);
     border-radius: 0 0 10px 10px;
-    padding: 40px 0 40px 0;
+    padding:0;
 }
 
-.colaborador .rodape h4 {
+.colaborador .rodape p {
     color: #6278f7;
     font-size: 18px;
     line-height: 22px;
     font-weight: bold;
     margin-bottom: 8px;
     font-family:"GandhiSansBold";
+    margin-top: 0px;
 }
 
-.colaborador .rodape h5{
+.colaborador .rodape p{
     font-size: 18px;
     line-height: 22px;
     color: #212121;
-    padding: 0 12px;
     font-family:"GandhiSansRegular";
 }
 .deletar{
