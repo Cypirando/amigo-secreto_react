@@ -7,6 +7,7 @@ const Menu = () => {
       <nav className="navegacao">
         <MenuLink to="/">Início</MenuLink>
         <MenuLink to="/participantes">Final</MenuLink>
+        {/* <MenuLink to="/resultado">Resultado</MenuLink> */}
       </nav>
     </header>
   );
