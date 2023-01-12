@@ -1,6 +1,6 @@
 const rota = "http://localhost:5000/nomes-sortados";
 
-async function getApi(nomes) {
+async function criarSorteio(nomes) {
   try {
     let header = new Headers({
       "Content-Type": "application/json",
@@ -19,8 +19,17 @@ async function getApi(nomes) {
   }
 }
 
-async function imprimirNaTela() {
-  await getApi(participantes);
-}
+// async function enviarDados() {
+//   await getApi();
+//   console.log("cliquei")
+// }
 
-export default SorteioApi;
+// const  teste = () =>  {
+
+//   return(
+//     function testeDoClick() {
+//       console.log("clicou")
+//     }
+//   )
+// }
+export default criarSorteio;

@@ -1,9 +1,17 @@
 import Participante from "../Participante";
 import "./Participantes.css";
+import Botao from "../Botao";
+import criarSorteio from "../../api";
+
 // import { v4 as uuidv4 } from "uuid";
 
-const Participantes = ({aoDeletar,colaboradores,corPrimaria,corSecundaria}) => {
+const Participantes = ({aoDeletar,colaboradores,corPrimaria,testeDoClick,corSecundaria}) => {
   console.log("arrai com a lista=",colaboradores)
+   function onClick() {
+   criarSorteio(colaboradores);
+  console.log("cliquei")
+}
+
   return (
     <section
       className="participantes"
@@ -28,8 +36,11 @@ const Participantes = ({aoDeletar,colaboradores,corPrimaria,corSecundaria}) => {
               corDeFundo={corSecundaria}
               aoDeletar={aoDeletar}
             />
+            
           );
         })}
+        <Botao  onClick={onClick}>Sortear</Botao>
+
       </div>
     </section>
   );
