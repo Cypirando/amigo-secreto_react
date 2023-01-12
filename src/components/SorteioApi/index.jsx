@@ -1,7 +1,5 @@
-
-/* -------------------------------- */
 const rota = "http://localhost:5000/nomes-sortados";
-/* -------------------------------- */
+
 async function getApi(nomes) {
   try {
     let header = new Headers({
@@ -14,8 +12,7 @@ async function getApi(nomes) {
     });
     request
       .json()
-      .then((sorteados) => {
-      })
+      .then((sorteados) => {})
       .catch((err) => console.log("err=", err));
   } catch (error) {
     console.log("eror");
