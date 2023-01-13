@@ -2,6 +2,7 @@
     text-align: center;
     padding: 24px;
     padding-bottom: 6rem;
+    
 }
 .participantes h3{
     font-size: .9375rem;
@@ -12,6 +13,14 @@
 }
 .participantes .colaboradores{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
-    flex-wrap: wrap
+
+}
+.btn-sorte{
+    display: flex;
+    /* grid-template-columns: 1fr 1fr; */
+    padding: 0 40px;
+    column-gap: 7rem;
+    justify-content: flex-start;
 }

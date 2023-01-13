@@ -8,6 +8,7 @@ import Rodape from "./components/rodape";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Menu from "./components/Menu";
 import Resultado from "./components/Resultado";
+import "./App.css"
 
 function AppRoutes() {
   const participantes = [
@@ -47,13 +48,7 @@ function AppRoutes() {
                   setColaboradores([...colaboradores, colaborador])
                 }
               />
-              
-            </div>
-          }
-        />
-        <Route
-          path="/participantes"
-          element={
+              {
             participantes.map((participante, indice) => (
             <Participantes
               key={indice}
@@ -64,6 +59,12 @@ function AppRoutes() {
               aoDeletar={deletarColaborador}
             />
           ))}
+            </div>
+          }
+        />
+        <Route
+          path="/participantes"
+          element={"testeeee"}
         />
         <Route
           path="/resultado"

@@ -19,17 +19,4 @@ async function criarSorteio(nomes) {
   }
 }
 
-// async function enviarDados() {
-//   await getApi();
-//   console.log("cliquei")
-// }
-
-// const  teste = () =>  {
-
-//   return(
-//     function testeDoClick() {
-//       console.log("clicou")
-//     }
-//   )
-// }
 export default criarSorteio;

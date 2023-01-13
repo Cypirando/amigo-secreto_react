@@ -1,5 +1,5 @@
 import Botao from "../Botao";
-import CampoResultado from "../CampoResultadp";
+import CampoResultado from "../CampoResultado";
 import "./Resultado.css";
 
 const Resultado = () => {
@@ -32,7 +32,7 @@ const Resultado = () => {
 
       <CampoResultado>{result.nome}</CampoResultado>
       <CampoResultado>O que voce desejaria ganhar?</CampoResultado>
-      <Botao>Eu queria gnhar</Botao>
+      <Botao  teste="Eu quero ganhar ..."/>
     </section>
   );
 };

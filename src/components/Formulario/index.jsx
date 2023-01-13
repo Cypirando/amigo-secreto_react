@@ -7,8 +7,6 @@ import { v4 as uuidv4 } from "uuid";
 const Formulario = (props) => {
   const [nome, setNome] = useState("");
   const [email, setEmail] = useState("");
-  const [presente, setPresente] = useState("");
-  const [imagem, setImagem] = useState("");
 
   const aoSalvar = (evento) => {
     evento.preventDefault();
@@ -16,19 +14,15 @@ const Formulario = (props) => {
       id: uuidv4(),
       nome,
       email,
-      presente,
-      imagem,
     });
     setNome("");
     setEmail("");
-    setPresente("");
-    setImagem("");
 
-    console.log("Form foi submetido=", nome, email, presente);
+    console.log("Form foi submetido=", nome, email);
   };
 
   return (
-    <section className="formulario">
+    <div className="formulario">
       <form onSubmit={aoSalvar}>
         {/* <h2>Preencha os dados para criar o sorteio</h2> */}
         <CampoTexto
@@ -45,21 +39,9 @@ const Formulario = (props) => {
           valor={email}
           aoAlterado={(valor) => setEmail(valor)}
         />
-        <CampoTexto
-          label="Presente"
-          placeholder="De alguma sugestão para presente"
-          valor={presente}
-          aoAlterado={(valor) => setPresente(valor)}
-        />
-        {/* <CampoTexto
-          label="Imagem"
-          placeholder="coloque o endereço da imagem "
-          valor={imagem}
-          aoAlterado={(valor) => setImagem(valor)}
-        /> */}
-        <Botao>Adicionar</Botao>
+        <Botao teste="Adicionar"/>
       </form>
-    </section>
+    </div>
   );
 };
 
