@@ -39,7 +39,7 @@ const Formulario = (props) => {
           valor={email}
           aoAlterado={(valor) => setEmail(valor)}
         />
-        <Botao teste="Adicionar"/>
+        <Botao texto="Adicionar"/>
       </form>
     </div>
   );

@@ -1,0 +1,20 @@
+.cabecalho{
+    display: grid;
+    justify-content: center;
+}
+
+.cabecalho h1{
+    color: white;
+}
+
+.hearders{
+    display: flex;
+    justify-content: center;
+}
+.caixa{
+    display: grid;
+    gap: 8px;
+    padding: 30px 20px;
+    border-radius: 5px;
+    box-shadow: rgb(219 219 219) 4px 1px 17px -5px;
+}

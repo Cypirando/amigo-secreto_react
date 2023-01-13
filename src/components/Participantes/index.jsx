@@ -19,7 +19,7 @@ const Participantes = ({ aoDeletar, colaboradores, corSecundaria }) => {
       <h3 style={{ borderColor: corSecundaria }}>
         {colaboradores.nome}Sorteio
       </h3>
-        <Botao onClick={onClick} teste="Sortear"/>
+        <Botao onClick={onClick} texto="Sortear"/>
       </div>
       <div className="colaboradores">
         {colaboradores.map((participante, indice) => {

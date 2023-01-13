@@ -6,7 +6,7 @@ const Botao = (props) => {
     <button 
     onClick={props.onClick}
     className='botao'>
-        {props.teste}
+        {props.texto}
     </button>
     )
 }
