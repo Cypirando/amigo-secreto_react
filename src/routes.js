@@ -8,6 +8,7 @@ import Rodape from "./components/rodape";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Menu from "./components/Menu";
 import Resultado from "./components/Resultado";
+import Inicio from "./components/Inicio";
 import "./App.css"
 
 function AppRoutes() {
@@ -38,8 +39,17 @@ function AppRoutes() {
       <Banner />
       <Menu/>
       <Routes>
-        <Route
+      <Route
           path="/"
+          element={
+            <div>
+              <Inicio/>
+            </div>
+          }
+        />
+
+        <Route
+          path="/formulario"
           element={
             <div className="App">
             
