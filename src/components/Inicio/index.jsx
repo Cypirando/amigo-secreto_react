@@ -4,7 +4,6 @@ import CampoTexto from "../CampoTexto";
 import { v4 as uuidv4 } from "uuid";
 import { useState } from "react";
 
-
 const Inicio = (props) => {
   const [grupo, setGrupo] = useState("");
 
@@ -19,15 +18,13 @@ const Inicio = (props) => {
     console.log("Form foi submetido=", grupo);
   };
 
-
   return (
     <section onSubmit={aoSalvarGrupo} className="cabecalho">
       <div className="hearders">
         <h1>Sorteio Para Amigo Secreto</h1>
       </div>
       <div className="caixa">
-      
-      <CampoTexto
+        <CampoTexto
           label="Grupo"
           placeholder="Digite o nome grupo!"
           valor={grupo}
