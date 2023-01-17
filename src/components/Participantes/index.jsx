@@ -6,9 +6,9 @@ import { useLocation } from "react-router-dom";
 
 // import { v4 as uuidv4 } from "uuid";
 
-const Participantes = ({ aoDeletar, colaboradores, nomeSorteio }) => {
+const Participantes = ({ aoDeletar, colaboradores }) => {
   const location = useLocation();
-// console.log(location)
+console.log(colaboradores)
   function onClick() {
     criarSorteio(colaboradores);
   }

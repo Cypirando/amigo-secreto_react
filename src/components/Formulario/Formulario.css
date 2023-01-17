@@ -1,15 +1,22 @@
 .formulario {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .formulario form {
-    width: 25rem;
-    background-color: #F2F2F2;
-    border-radius: 20px;
-    padding: 12px 24px;
-    box-shadow: 8px 8px 16px rgb(0 0 0 / 8%);
+  width: 25rem;
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  padding: 12px 24px;
+  box-shadow: 8px 8px 16px rgb(0 0 0 / 8%);
 }
 .formulario h2 {
-    font-family:"GandhiSansBold";
+  font-family: "GandhiSansBold";
+}
+.input-error {
+  border: 1px solid red; 
+}
+.error-message {
+  color: red;
+  font-size: 12px;
 }

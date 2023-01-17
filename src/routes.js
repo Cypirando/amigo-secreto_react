@@ -46,12 +46,15 @@ function AppRoutes() {
           element={
             <div className="App">
               <Formulario
-                aoColaboradorCadastrado={(colaborador) =>
-                  setColaboradores([...colaboradores, colaborador])
-                }
+                colaboradores={colaboradores}
+                aoColaboradorCadastrado={(colaborador) => {
+                  setColaboradores([...colaboradores, colaborador]);
+                  console.log("teste", colaboradores);
+                }}
               />
 
               <Participantes
+                
                 colaboradores={colaboradores}
                 nomeSorteio={grupos}
                 aoDeletar={deletarColaborador}
