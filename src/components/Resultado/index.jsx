@@ -5,7 +5,7 @@ import "./Resultado.css";
 const Resultado = () => {
   let url_atual = window.location.href;
   let token = url_atual.slice(37);
-  console.log(token);
+  // console.log(token);
   let result;
   parseJwt(token);
   function parseJwt(token) {
@@ -24,7 +24,7 @@ const Resultado = () => {
     result = JSON.parse(jsonPayload);
     return result;
   }
-  console.log(result.nome);
+  // console.log(result.nome);
 
   return (
     <section className="resultado">

@@ -2,7 +2,7 @@ import "./Menu.css";
 // import style from '../../components/Menu/Menu.module.scss'
 import MenuLink from "../MenuLink";
 const Menu = ({ grupo }) => {
-  console.log(grupo, "MENU");
+  // console.log(grupo, "MENU");
   return (
     <header>
       <nav className="navegacao">

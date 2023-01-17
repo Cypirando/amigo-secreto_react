@@ -8,7 +8,7 @@ import { useLocation } from "react-router-dom";
 
 const Participantes = ({ aoDeletar, colaboradores, nomeSorteio }) => {
   const location = useLocation();
-console.log(location)
+// console.log(location)
   function onClick() {
     criarSorteio(colaboradores);
   }

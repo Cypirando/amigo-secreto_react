@@ -4,7 +4,6 @@ import Banner from "./components/Banner";
 import Formulario from "./components/Formulario";
 import Participantes from "./components/Participantes";
 import Rodape from "./components/rodape";
-// import { v4 as uuidv4 } from "uuid";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Menu from "./components/Menu";
 import Resultado from "./components/Resultado";
@@ -15,19 +14,19 @@ function AppRoutes() {
   const [colaboradores, setColaboradores] = useState([]);
 
   function deletarColaborador(id) {
-    console.log(id);
+    // console.log(id);
     setColaboradores(
       colaboradores.filter((colaborador) => {
-        console.log(colaborador.id);
+        // console.log(colaborador.id);
         return colaborador.id !== id;
       })
     );
-    console.log(colaboradores);
+    // console.log(colaboradores);
   }
 
   const [grupos, setGrupos] = useState("");
 
-  console.log(grupos);
+  // console.log(grupos);
   return (
     <BrowserRouter>
       <Banner />
