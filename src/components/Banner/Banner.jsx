@@ -9,6 +9,7 @@ export const Banner = () => {
           src="/images/logo-botdesigner-light.png"
           alt="O banner principal da página do Botdesigner"
         />
+        
       
       <h1>Sorteio Para Amigo Secreto</h1>
     </header>
