@@ -10,6 +10,7 @@
     display: inline-block;
     padding-bottom: 6px;
     font-family:"GandhiSansRegular";
+    color: #FFFFFF;
 }
 .participantes .colaboradores{
     display: flex;
@@ -19,8 +20,7 @@
 }
 .btn-sorte{
     display: flex;
-    /* grid-template-columns: 1fr 1fr; */
     padding: 0 40px;
     column-gap: 7rem;
-    justify-content: flex-start;
+    justify-content: center;
 }

@@ -26,14 +26,14 @@ const Formulario = (props) => {
       <form onSubmit={aoSalvar}>
         {/* <h2>Preencha os dados para criar o sorteio</h2> */}
         <CampoTexto
-          obrigatorio={true}
+          obrigatorio
           label="Nome"
           placeholder="Digite o nome dos participantes"
           valor={nome}
           aoAlterado={(valor) => setNome(valor)}
         />
         <CampoTexto
-          obrigatorio={true}
+          obrigatorio
           label="Email"
           placeholder="Digite seu email dos participantes"
           valor={email}

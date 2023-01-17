@@ -1,37 +1,40 @@
 import "./Inicio.css";
 import Botao from "../Botao";
 import CampoTexto from "../CampoTexto";
-import { v4 as uuidv4 } from "uuid";
+import { useLocation, useNavigate } from "react-router-dom";
 import { useState } from "react";
 
 const Inicio = (props) => {
-  const [grupo, setGrupo] = useState("");
+  const location = useLocation();
+
+  const [nomeDoSorteio, SetNomeDoSorteio] = useState(
+    location.state?.nomeDoSorteio || ""
+  );
+  let navigate = useNavigate();
+
+  function mudarRota() {
+    props.aoSalvarNomeGrupo(nomeDoSorteio);
+    navigate("/formulario", { state: { nomeDoSorteio } });
+  }
 
   const aoSalvarGrupo = (evento) => {
+    console.log("evento", evento);
     evento.preventDefault();
-    props.aoGrupoCadastrado({
-      id: uuidv4(),
-      grupo,
-    });
-    setGrupo("");
-
-    console.log("Form foi submetido=", grupo);
   };
 
   return (
-    <section onSubmit={aoSalvarGrupo} className="cabecalho">
-      <div className="hearders">
-        <h1>Sorteio Para Amigo Secreto</h1>
-      </div>
-      <div className="caixa">
+    <section className="cabecalho">
+      <form onSubmit={aoSalvarGrupo} className="caixa">
         <CampoTexto
+          obrigatorio
           label="Grupo"
           placeholder="Digite o nome grupo!"
-          valor={grupo}
-          aoAlterado={(valor) => setGrupo(valor)}
+          valor={nomeDoSorteio}
+          aoAlterado={(valor) => SetNomeDoSorteio(valor)}
         />
-        <Botao texto="Avançar" />
-      </div>
+
+        <Botao onClick={mudarRota} texto="Avançar"></Botao>
+      </form>
     </section>
   );
 };
