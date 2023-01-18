@@ -17,19 +17,15 @@ function AppRoutes() {
   const [colaboradores, setColaboradores] = useState([]);
 
   function deletarColaborador(id) {
-    // console.log(id);
     setColaboradores(
       colaboradores.filter((colaborador) => {
-        // console.log(colaborador.id);
         return colaborador.id !== id;
       })
     );
-    // console.log(colaboradores);
   }
 
   const [grupos, setGrupos] = useState("");
 
-  // console.log(grupos);
   return (
     <BrowserRouter>
       <Banner />
