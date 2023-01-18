@@ -16,7 +16,7 @@ async function criarSorteio(nomes) {
     console.log(sorteados);
   } catch (error) {
     console.log(error);
-    alert("There was an error with the API call. Please try again later.");
+    alert("Ocorreu um erro com a chamada de API. Por favor, tente novamente mais tarde.");
   }
 }
 

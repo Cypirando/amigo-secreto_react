@@ -10,7 +10,6 @@ import Resultado from "./components/Resultado";
 import Inicio from "./pages/Inicio";
 import "./App.css";
 import Final from "./pages/Final";
-import Titulo from "./components/Titulo";
 import NaoEncontrada from "./pages/NaoEncontrada";
 
 function AppRoutes() {
@@ -53,7 +52,6 @@ function AppRoutes() {
               />
 
               <Participantes
-                
                 colaboradores={colaboradores}
                 nomeSorteio={grupos}
                 aoDeletar={deletarColaborador}
@@ -61,13 +59,7 @@ function AppRoutes() {
             </div>
           }
         />
-        <Route path="/fim" element={
-          <Final>
-            <Titulo>
-              Sorteio realizado com sucesso!
-            </Titulo>
-          </Final>
-        } />
+        <Route path="/fim" element={<Final />} />
         <Route path="/resultado" element={<Resultado />} />
         <Route path="*" element={<NaoEncontrada />}></Route>
       </Routes>
