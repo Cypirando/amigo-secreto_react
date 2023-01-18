@@ -1,3 +1,23 @@
+.teeste{
+    margin: 12px 0;
+}
+
+
+.teeste label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: .9375rem;
+}
+
+.teeste input {
+    background-color: #FFF;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06);
+    width: 100%;
+    font-size: .9375rem;
+    padding: 6px;
+    box-sizing: border-box;
+}
+
 .campo-texto {
     margin: 12px 0;
 }
@@ -17,8 +37,8 @@
     padding: 6px;
     box-sizing: border-box;
 }
-.input-error {
-    border: 1px solid red; 
+.erro {
+    border: 2px solid red; 
   }
 .error-message {
     color: red;

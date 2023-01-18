@@ -9,15 +9,21 @@ const Formulario = ({ aoColaboradorCadastrado, colaboradores }) => {
   const [nome, setNome] = useState("");
   const [email, setEmail] = useState("");
 
+  const [emailRepetido, setEmailRepetido] = useState(false);
+  const [emailIvalido, setEmailInvalido] = useState(false);
+
+
+
   const aoSalvar = (evento) => {
     evento.preventDefault();
     const emailRegex = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/;
     if (!emailRegex.test(email)) {
-      alert("email invalido.");
+      setEmailInvalido(true)
     } else if (
       colaboradores.find((colaborador) => colaborador.email === email)
+      
     ) {
-      alert("Email ja usado.");
+      setEmailRepetido(true);
     } else {
       aoColaboradorCadastrado({
         id: uuidv4(),
@@ -27,8 +33,14 @@ const Formulario = ({ aoColaboradorCadastrado, colaboradores }) => {
       setNome("");
       setEmail("");
 
+
       // console.log("Form foi submetido=", nome, email);
     }
+  };
+  const aoAlterarEmail = (valor) => {
+    setEmail(valor);
+    setEmailRepetido(false);
+    setEmailInvalido(false);
   };
 
   return (
@@ -46,7 +58,10 @@ const Formulario = ({ aoColaboradorCadastrado, colaboradores }) => {
           label="Email"
           placeholder="Digite seu email dos participantes"
           valor={email}
-          aoAlterado={(valor) => setEmail(valor)}
+          aoAlterado={aoAlterarEmail}
+          emailRepetido={emailRepetido}
+          emailIvalido={emailIvalido}
+
         />
         <Botao texto="Adicionar" />
       </form>

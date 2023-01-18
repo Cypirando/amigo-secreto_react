@@ -1,22 +1,36 @@
+import MensagenDeErro from "../MensagenDeErro";
 import "./CampoTexto.css";
 
-const CampoTexto = ({placeholder, aoAlterado, label, valor, obrigatorio}) => {
+const CampoTexto = ({
+  placeholder,
+  aoAlterado,
+  label,
+  valor,
+  obrigatorio,
+  emailIvalido,
+  emailRepetido,
+  ...props
+}) => {
   const placeholderModificada = `${placeholder}...`;
- 
 
-  const aoDigitado = (evento) => {
-    aoAlterado(evento.target.value);
-  };
+  // const aoDigitado = (evento) => {
+  //   aoAlterado(evento.target.value);
+  // };
 
   return (
-    <div className="campo-texto">
+    <div className="teeste"  >
       <label>{label}</label>
-      <input
+      <input className={`campo-texto ${emailRepetido ? "erro" : ""}`}
+       
         value={valor}
-        onChange={aoDigitado}
+        onChange={(evento) => aoAlterado(evento.target.value)} {...props}
         required={obrigatorio}
         placeholder={placeholderModificada}
+
       />
+       <MensagenDeErro erro={emailRepetido} mensagem="E-mail já cadastrado" />
+       <MensagenDeErro erro={emailIvalido} mensagem="E-mail Invalido" />
+
     </div>
   );
 };
