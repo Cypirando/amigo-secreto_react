@@ -15,7 +15,7 @@ console.log(colaboradores)
   return (
     <div className="participantes">
       <div className="btn-sorte">
-        <h3>{location.state?.nomeDoSorteio}</h3>;
+        <h3>{location.state?.nomeDoSorteio}</h3>
         <Botao onClick={onClick} texto="Sortear" />
       </div>
       <div className="colaboradores">

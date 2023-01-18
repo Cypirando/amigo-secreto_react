@@ -13,24 +13,19 @@ const CampoTexto = ({
 }) => {
   const placeholderModificada = `${placeholder}...`;
 
-  // const aoDigitado = (evento) => {
-  //   aoAlterado(evento.target.value);
-  // };
-
   return (
-    <div className="teeste"  >
+    <div className="teeste">
       <label>{label}</label>
-      <input className={`campo-texto ${emailRepetido ? "erro" : ""}`}
-       
+      <input
+        className={`campo-texto ${emailRepetido ? "erro" : ""}`}
         value={valor}
-        onChange={(evento) => aoAlterado(evento.target.value)} {...props}
+        onChange={(evento) => aoAlterado(evento.target.value)}
+        {...props}
         required={obrigatorio}
         placeholder={placeholderModificada}
-
       />
-       <MensagenDeErro erro={emailRepetido} mensagem="E-mail já cadastrado" />
-       <MensagenDeErro erro={emailIvalido} mensagem="E-mail Invalido" />
-
+      <MensagenDeErro erro={emailRepetido} mensagem="E-mail já cadastrado" />
+      <MensagenDeErro erro={emailIvalido} mensagem="E-mail Invalido" />
     </div>
   );
 };
