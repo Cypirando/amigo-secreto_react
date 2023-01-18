@@ -1,0 +1,7 @@
+.container{
+    display: grid;
+    justify-items: center;
+}
+.container h2 {
+    display: inline-block;
+}

@@ -1,6 +1,6 @@
 //src/componentes/Rodape/index.js
 import MenuLink from "../MenuLink";
-import "./rodape.css";
+import "./Rodape.css";
 
 const Rodape = () => {
   return (

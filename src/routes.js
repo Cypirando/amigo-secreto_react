@@ -1,14 +1,17 @@
 import { useState } from "react";
 import "./components/style/estilosGlobais.scss";
 import Banner from "./components/Banner";
-import Formulario from "./components/Formulario";
+import Formulario from "./pages/Formulario";
 import Participantes from "./components/Participantes";
-import Rodape from "./components/rodape";
+import Rodape from "./components/Rodape";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Menu from "./components/Menu";
 import Resultado from "./components/Resultado";
-import Inicio from "./components/Inicio";
+import Inicio from "./pages/Inicio";
 import "./App.css";
+import Final from "./pages/Final";
+import Titulo from "./components/Titulo";
+import NaoEncontrada from "./pages/NaoEncontrada";
 
 function AppRoutes() {
   const [colaboradores, setColaboradores] = useState([]);
@@ -62,8 +65,15 @@ function AppRoutes() {
             </div>
           }
         />
-        <Route path="/participantes" element={"testeeee"} />
+        <Route path="/fim" element={
+          <Final>
+            <Titulo>
+              Sorteio realizado com sucesso!
+            </Titulo>
+          </Final>
+        } />
         <Route path="/resultado" element={<Resultado />} />
+        <Route path="*" element={<NaoEncontrada />}></Route>
       </Routes>
       <Rodape />
     </BrowserRouter>

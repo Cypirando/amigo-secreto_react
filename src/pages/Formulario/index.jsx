@@ -1,6 +1,6 @@
 import { useState } from "react";
-import Botao from "../Botao";
-import CampoTexto from "../CampoTexto";
+import Botao from "../../components/Botao";
+import CampoTexto from "../../components/CampoTexto";
 import "./Formulario.css";
 import { v4 as uuidv4 } from "uuid";
 // import MensagenDeErro from "../MensagenDeErro";

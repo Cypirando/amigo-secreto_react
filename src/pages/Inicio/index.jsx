@@ -1,6 +1,6 @@
 import "./Inicio.css";
-import Botao from "../Botao";
-import CampoTexto from "../CampoTexto";
+import Botao from "../../components/Botao";
+import CampoTexto from "../../components/CampoTexto";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useState } from "react";
 

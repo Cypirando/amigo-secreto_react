@@ -2,16 +2,20 @@ import Participante from "../Participante";
 import "./Participantes.css";
 import Botao from "../Botao";
 import criarSorteio from "../../api";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 // import { v4 as uuidv4 } from "uuid";
 
 const Participantes = ({ aoDeletar, colaboradores }) => {
   const location = useLocation();
-console.log(colaboradores)
+  let navigate = useNavigate();
+
+  console.log(colaboradores);
   function onClick() {
     criarSorteio(colaboradores);
+    navigate("/fim");
   }
+
   return (
     <div className="participantes">
       <div className="btn-sorte">
