@@ -3,7 +3,7 @@ import axios from "axios";
 
 const rota = "http://localhost:5000/nomes-sortados";
 
-async function criarSorteio(nomes) {
+async function criarSorteio(nomes, Final) {
   try {
     const config = {
       headers: {
@@ -17,6 +17,7 @@ async function criarSorteio(nomes) {
   } catch (error) {
     console.log(error);
     alert("Ocorreu um erro com a chamada de API. Por favor, tente novamente mais tarde.");
+    return <Final>Ocorreu um erro com a chamada de API. Por favor, tente novamente mais tarde.</Final>;
   }
 }
 

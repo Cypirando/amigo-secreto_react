@@ -3,6 +3,8 @@ import "./Participantes.css";
 import Botao from "../Botao";
 import criarSorteio from "../../api";
 import { useLocation, useNavigate } from "react-router-dom";
+import Final from "../../pages/Final";
+
 
 // import { v4 as uuidv4 } from "uuid";
 
@@ -12,7 +14,7 @@ const Participantes = ({ aoDeletar, colaboradores }) => {
 
   console.log(colaboradores);
   function onClick() {
-    criarSorteio(colaboradores);
+    criarSorteio(colaboradores, Final);
     navigate("/fim");
   }
 
