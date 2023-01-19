@@ -2,6 +2,8 @@
     text-align: center;
     padding: 24px;
     padding-bottom: 6rem;
+    display: grid;
+    justify-items: center;
     
 }
 .participantes h3{
@@ -16,6 +18,7 @@
 .participantes .colaboradores{
     display: flex;
     flex-wrap: wrap;
+    gap: 8px;
     justify-content: space-around;
 
 }

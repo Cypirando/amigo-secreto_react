@@ -27,8 +27,8 @@ const Inicio = (props) => {
       <form onSubmit={aoSalvarGrupo} className="caixa">
         <CampoTexto
           obrigatorio
-          label="Grupo"
-          placeholder="Digite o nome grupo!"
+          label="Nome Do Sorteio"
+          placeholder="Digite o nome do sorteio!"
           valor={nomeDoSorteio}
           aoAlterado={(valor) => SetNomeDoSorteio(valor)}
         />
