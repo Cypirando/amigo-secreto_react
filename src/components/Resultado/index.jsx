@@ -1,5 +1,7 @@
 import Botao from "../Botao";
 import CampoResultado from "../CampoResultado";
+import Titulo from "../../components/Titulo";
+
 import "./Resultado.css";
 
 const Resultado = () => {
@@ -30,7 +32,7 @@ const Resultado = () => {
     <section className="resultado">
       <CampoResultado>Olá, seu amigo secreto é:</CampoResultado>
 
-      <CampoResultado>{result.nome}</CampoResultado>
+      <Titulo>{result.nome}</Titulo>
       <CampoResultado>O que voce desejaria ganhar?</CampoResultado>
       <Botao  teste="Eu quero ganhar ..."/>
     </section>
