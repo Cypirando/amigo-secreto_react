@@ -1,5 +1,3 @@
-
-
 import axios from "axios";
 
 const rota = "http://localhost:5000/nomes-sortados";
@@ -14,7 +12,7 @@ async function criarSorteio(nomes) {
     };
     return await axios.post(rota, { nomes }, config);
   } catch (error) {
-    throw error
+    throw error;
   }
 }
 

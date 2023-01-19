@@ -1,7 +1,7 @@
-.container{
-    display: grid;
-    justify-items: center;
+.container {
+  display: grid;
+  justify-items: center;
 }
 .container h2 {
-    display: inline-block;
+  display: inline-block;
 }

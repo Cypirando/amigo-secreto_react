@@ -9,9 +9,7 @@ const Participante = ({ colaborador, corDeFundo, aoDeletar }) => {
         className="deletar"
         onClick={() => aoDeletar(colaborador.id)}
       />
-      <div className="cabecalho" style={{ backgroundColor: corDeFundo }}>
-       
-      </div>
+      <div className="cabecalho" style={{ backgroundColor: corDeFundo }}></div>
 
       <div className="rodape">
         <p>{colaborador.nome}</p>

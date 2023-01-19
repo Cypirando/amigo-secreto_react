@@ -1,24 +1,24 @@
 /* src/componentes/Rodape/index.js */
 
 .footer {
-    background: #6278F7;
-    color: #FFF;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    bottom: 0;
-    min-width: 100%;
+  background: #6278f7;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  min-width: 100%;
 }
 
 .footer ul li {
-    display: inline-block;
-    margin-right: 32px;
+  display: inline-block;
+  margin-right: 32px;
 }
 
 .footer ul li:last-child {
-    margin-right: 0;
+  margin-right: 0;
 }
-.footer p{
-    padding: 0 80px;
+.footer p {
+  padding: 0 80px;
 }

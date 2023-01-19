@@ -1,13 +1,11 @@
-import './Botao.css'
+import "./Botao.css";
 
 const Botao = (props) => {
-    return (
-    <button 
-    onClick={props.onClick}
-    className='botao'>
-        {props.texto}
+  return (
+    <button onClick={props.onClick} className="botao">
+      {props.texto}
     </button>
-    )
-}
+  );
+};
 
-export default Botao
+export default Botao;

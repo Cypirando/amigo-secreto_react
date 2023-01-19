@@ -3,7 +3,6 @@ import Botao from "../../components/Botao";
 import CampoTexto from "../../components/CampoTexto";
 import "./Formulario.css";
 import { v4 as uuidv4 } from "uuid";
-// import MensagenDeErro from "../MensagenDeErro";
 
 const Formulario = ({ aoColaboradorCadastrado, colaboradores }) => {
   const [nome, setNome] = useState("");
@@ -12,16 +11,13 @@ const Formulario = ({ aoColaboradorCadastrado, colaboradores }) => {
   const [emailRepetido, setEmailRepetido] = useState(false);
   const [emailIvalido, setEmailInvalido] = useState(false);
 
-
-
   const aoSalvar = (evento) => {
     evento.preventDefault();
     const emailRegex = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/;
     if (!emailRegex.test(email)) {
-      setEmailInvalido(true)
+      setEmailInvalido(true);
     } else if (
       colaboradores.find((colaborador) => colaborador.email === email)
-      
     ) {
       setEmailRepetido(true);
     } else {
@@ -33,8 +29,6 @@ const Formulario = ({ aoColaboradorCadastrado, colaboradores }) => {
       setNome("");
       setEmail("");
 
-
-      // console.log("Form foi submetido=", nome, email);
     }
   };
   const aoAlterarEmail = (valor) => {
@@ -61,7 +55,6 @@ const Formulario = ({ aoColaboradorCadastrado, colaboradores }) => {
           aoAlterado={aoAlterarEmail}
           emailRepetido={emailRepetido}
           emailIvalido={emailIvalido}
-
         />
         <Botao texto="Adicionar" />
       </form>

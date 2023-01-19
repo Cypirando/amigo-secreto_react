@@ -1,20 +1,20 @@
-.cabecalho{
-    display: grid;
-    justify-content: center;
+.cabecalho {
+  display: grid;
+  justify-content: center;
 }
 
-.cabecalho h1{
-    color: white;
+.cabecalho h1 {
+  color: white;
 }
 
-.hearders{
-    display: flex;
-    justify-content: center;
+.hearders {
+  display: flex;
+  justify-content: center;
 }
-.caixa{
-    min-width: 25rem;
-    background-color: #F2F2F2;
-    padding: 12px 24px;
-    border-radius: 20px;
-    box-shadow: 8px 8px 16px rgb(0 0 0 / 8%);
+.caixa {
+  min-width: 25rem;
+  background-color: #f2f2f2;
+  padding: 12px 24px;
+  border-radius: 20px;
+  box-shadow: 8px 8px 16px rgb(0 0 0 / 8%);
 }

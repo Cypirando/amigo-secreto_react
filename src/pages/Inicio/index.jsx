@@ -18,7 +18,6 @@ const Inicio = (props) => {
   }
 
   const aoSalvarGrupo = (evento) => {
-    // console.log("evento", evento);
     evento.preventDefault();
   };
 

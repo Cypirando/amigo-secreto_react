@@ -1,17 +1,17 @@
 @import "../../components/style/_variaveis.scss";
 
 .banner {
-    text-align:center;
-    padding: 20px 20px 1px 20px;
+  text-align: center;
+  padding: 20px 20px 1px 20px;
 }
 
 .banner img {
-    display: grid;
-    max-width: 20%;
-    cursor: pointer;
+  display: grid;
+  max-width: 20%;
+  cursor: pointer;
 }
 .banner h1 {
-    color: white;
-    font-family:system-ui;
-    font-family:"GandhiSansRegular";
+  color: white;
+  font-family: system-ui;
+  font-family: "GandhiSansRegular";
 }

@@ -1,5 +1,5 @@
-.resultado{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.resultado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

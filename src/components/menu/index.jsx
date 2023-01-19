@@ -1,10 +1,7 @@
 import "./Menu.css";
-// import style from '../../components/Menu/Menu.module.scss'
 import MenuLink from "../MenuLink";
-// import Final from "../../pages/Final";
 
 const Menu = ({ grupo }) => {
-  // console.log(grupo, "MENU");
   return (
     <header>
       <nav className="navegacao">
@@ -13,7 +10,6 @@ const Menu = ({ grupo }) => {
         </MenuLink>
         <MenuLink to="/formulario"></MenuLink>
         <MenuLink to="/fim"></MenuLink>
-        
       </nav>
     </header>
   );

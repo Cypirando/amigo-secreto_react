@@ -1,6 +1,6 @@
 import "./Titulo.css";
 
-const Titulo = ({ children }) => {
+const Titulo = ({ children }) =>  {
   return <div className="texto">{children}</div>;
 };
 

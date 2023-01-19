@@ -1,47 +1,45 @@
-.participantes{
-    text-align: center;
-    padding: 24px;
-    padding-bottom: 6rem;
-    display: grid;
-    justify-items: center;
-    
+.participantes {
+  text-align: center;
+  padding: 24px;
+  padding-bottom: 6rem;
+  display: grid;
+  justify-items: center;
 }
-.participantes h3{
-    text-transform: capitalize;
-    font-size: .9375rem;
-    border-bottom: 4px solid;
-    display: inline-block;
-    padding-bottom: 6px;
-    font-family:"GandhiSansRegular";
-    color: #FFFFFF;
+.participantes h3 {
+  text-transform: capitalize;
+  font-size: 0.9375rem;
+  border-bottom: 4px solid;
+  display: inline-block;
+  padding-bottom: 6px;
+  font-family: "GandhiSansRegular";
+  color: #ffffff;
 }
-.participantes .colaboradores{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    justify-content: space-around;
-
+.participantes .colaboradores {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: space-around;
 }
-.btn-sorte{
-    display: flex;
-    padding: 0 40px;
-    column-gap: 7rem;
-    justify-content: center;
+.btn-sorte {
+  display: flex;
+  padding: 0 40px;
+  column-gap: 7rem;
+  justify-content: center;
 }
-.participantes button{
-    background-color: #6278f7;
-    border-radius: 10px;
-    font-weight: 700;
-    font-size: .9375rem;
-    padding: 12px;
-    border: none;
-    cursor: pointer;
-    color: #FFF;
-    margin: 8px 0;
+.participantes button {
+  background-color: #6278f7;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 0.9375rem;
+  padding: 12px;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  margin: 8px 0;
 }
 .participantes button:hover {
-    color: #95FFD4;
+  color: #95ffd4;
 }
 .participantes button:disabled {
-    cursor: not-allowed;
+  cursor: not-allowed;
 }

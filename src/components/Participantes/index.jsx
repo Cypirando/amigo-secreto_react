@@ -52,7 +52,9 @@ const Participantes = ({ aoDeletar, colaboradores }) => {
       {erro && <Erro message={erro} />}
       <div className="btn-sorte">
         <h3>{location.state?.nomeDoSorteio}</h3>
-        <button onClick={onClick} disabled={colaboradores.length < 2}>Sortear</button>
+        <button onClick={onClick} disabled={colaboradores.length < 2}>
+          Sortear
+        </button>
       </div>
       <div className="colaboradores">
         {colaboradores.map((participante, indice) => {

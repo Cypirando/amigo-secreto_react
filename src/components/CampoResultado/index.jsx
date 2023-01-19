@@ -9,3 +9,4 @@ const CampoResultado = (props) => {
 };
 
 export default CampoResultado;
+

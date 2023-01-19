@@ -1,13 +1,13 @@
 .navegacao {
-    padding-bottom: 2rem;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    column-gap: 3rem;
+  padding-bottom: 2rem;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  column-gap: 3rem;
 }
 
 @media (max-width: 744px) {
-    .navegacao {
-        height: 72px;
-    }
+  .navegacao {
+    height: 72px;
+  }
 }

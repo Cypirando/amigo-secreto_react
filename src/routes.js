@@ -22,7 +22,6 @@ function AppRoutes() {
       })
     );
   }
-
   const [grupos, setGrupos] = useState("");
 
   return (

@@ -1,46 +1,45 @@
-.teeste{
-    margin: 12px 0;
+.teeste {
+  margin: 12px 0;
 }
 
-
 .teeste label {
-    display: block;
-    margin-bottom: 6px;
-    font-size: .9375rem;
+  display: block;
+  margin-bottom: 6px;
+  font-size: 0.9375rem;
 }
 
 .teeste input {
-    background-color: #FFF;
-    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06);
-    width: 100%;
-    font-size: .9375rem;
-    padding: 6px;
-    box-sizing: border-box;
+  background-color: #fff;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06);
+  width: 100%;
+  font-size: 0.9375rem;
+  padding: 6px;
+  box-sizing: border-box;
 }
 
 .campo-texto {
-    margin: 12px 0;
+  margin: 12px 0;
 }
 
 .campo-texto label {
-    display: block;
-    margin-bottom: 6px;
-    font-size: .9375rem;
+  display: block;
+  margin-bottom: 6px;
+  font-size: 0.9375rem;
 }
 
 .campo-texto input {
-    background-color: #FFF;
-    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06);
-    width: 100%;
-    border: none;
-    font-size: .9375rem;
-    padding: 6px;
-    box-sizing: border-box;
+  background-color: #fff;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06);
+  width: 100%;
+  border: none;
+  font-size: 0.9375rem;
+  padding: 6px;
+  box-sizing: border-box;
 }
 .erro {
-    border: 2px solid red; 
-  }
+  border: 2px solid red;
+}
 .error-message {
-    color: red;
-    font-size: 12px;
-  }
+  color: red;
+  font-size: 12px;
+}

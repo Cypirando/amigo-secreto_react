@@ -34,7 +34,7 @@ const Resultado = () => {
 
       <Titulo>{result.nome}</Titulo>
       <CampoResultado>O que voce desejaria ganhar?</CampoResultado>
-      <Botao  texto="Eu quero ganhar ..."/>
+      <Botao texto="Eu quero ganhar ..." />
     </section>
   );
 };
