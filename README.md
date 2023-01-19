@@ -32,8 +32,11 @@ Projeto desenvolvido para colocar em pratica e testar o conhecimento absorvido a
 :heavy_check_mark: `Funcionalidade 1:` Inserir o nome do grupo para qual o sorteio ser realizado.
 
 :heavy_check_mark: `Funcionalidade 2:` Armazenar os nomes dos candidatos a ser inserido no formulário para então realizar o sorteio contendo o Email do participante e nome e ter a opção de corrigir caso algum participante tenha inserido a informação incorreta.
+
 :heavy_check_mark: `Funcionalidade 3:` Enviar a lista de nomes para uma api que irá realizar o sorteio.
+
 :heavy_check_mark: `Funcionalidade 4:` Receber o resultado de quem pegou quem por email.
+
 :heavy_check_mark: `Funcionalidade 5:` Ter a opção de dar uma sugestão de presente após receber o resultado por Email.
 ## Aplicação
 
@@ -54,15 +57,15 @@ Projeto desenvolvido para colocar em pratica e testar o conhecimento absorvido a
 ###
 ## Acesso ao projeto
 
-Você pode [acessar o código fonte do projeto](https://github.com/Cypirando/amigo-secreto_react) ou [baixá-lo](https://github.com/Cypirando/amigo-secreto_react  /archive/refs/heads/main.zip).
+Você pode [acessar o código fonte do projeto](https://github.com/Cypirando/amigo-secreto_react)
 
 ## Abrir e rodar o projeto
 
 Após baixar o projeto, você pode abrir com o `Vs code` ou ferramneta de edição de prefernecia. Para isso, na tela de launcher clique em:
 
 - `Abra o terminal` (Ctrl + ');
-- De um `npm install` para baixar todas dependencias ultilizada no desenvolvimento do projeto);
-- Por fim de um `npm start` para inializar o sistema.
+- De um `npm install` para baixar todas dependências utilizada no desenvolvimento do projeto.
+- Por fim de um `npm start` para inicializar o sistema.
 
 ## Desenvolvedores
 
