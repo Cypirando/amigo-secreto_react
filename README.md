@@ -61,7 +61,7 @@ Você pode [acessar o código fonte do projeto](https://github.com/Cypirando/ami
 
 ## Abrir e rodar o projeto
 
-Após baixar o projeto, você pode abrir com o `Vs code` ou ferramneta de edição de prefernecia. Para isso, na tela de launcher clique em:
+Após baixar o projeto, você pode abrir com o `Vs code` ou ferramenta de edição de preferência.
 
 - `Abra o terminal` (Ctrl + ');
 - De um `npm install` para baixar todas dependências utilizada no desenvolvimento do projeto.
