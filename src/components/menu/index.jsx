@@ -11,8 +11,8 @@ const Menu = ({ grupo }) => {
         <MenuLink state={{ nomeDoSorteio: grupo }} to="/">
           Início
         </MenuLink>
-        <MenuLink to="/formulario">Sorteio</MenuLink>
-        <MenuLink to="/fim">Fim</MenuLink>
+        <MenuLink to="/formulario"></MenuLink>
+        <MenuLink to="/fim"></MenuLink>
         
       </nav>
     </header>

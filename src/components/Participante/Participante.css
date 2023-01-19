@@ -1,45 +1,50 @@
 .colaborador {
-    position: relative;
-    width: 280px;
+  position: relative;
+  width: 280px;
 }
 
 .colaborador .cabecalho {
-    height: 24px;
-    background-color: #6278f7;
-    border-radius: 10px 10px 0px 0px;
+  height: 24px;
+  background-color: #6278f7;
+  border-radius: 10px 10px 0px 0px;
 }
 .colaborador span {
-    width: 100px;
-    border-radius: 50%;
-    position: relative;
-    bottom: -50px;
+  width: 100px;
+  border-radius: 50%;
+  position: relative;
+  bottom: -50px;
 }
 
 .colaborador .rodape {
-    background: #ffffff;
-    box-shadow: 5px 5px 15px rgba(0,0,0,0.08);
-    border-radius: 0 0 10px 10px;
-    padding:0;
+  background: #ffffff;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.08);
+  border-radius: 0 0 10px 10px;
+  padding: 0;
 }
 
 .colaborador .rodape p {
-    color: #6278f7;
-    font-size: 18px;
-    line-height: 22px;
-    font-weight: bold;
-    margin-bottom: 8px;
-    font-family:"GandhiSansBold";
-    margin-top: 0px;
+  color: #6278f7;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  font-family: "GandhiSansBold";
+  margin-top: 0px;
 }
 
-.colaborador .rodape p{
-    font-size: 18px;
-    line-height: 22px;
-    color: #212121;
-    font-family:"GandhiSansRegular";
+.colaborador .rodape p {
+    margin-bottom: 0;
+  text-transform: capitalize;
+  font-size: 18px;
+  line-height: 22px;
+  color: #212121;
+  font-family: "GandhiSansRegular";
 }
-.deletar{
-    position:absolute;
-    right: 10px;
-    cursor: pointer;
+.deletar {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+}
+.colaborador .rodape small {
+  line-height: 2;
 }

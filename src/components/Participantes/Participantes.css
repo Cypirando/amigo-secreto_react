@@ -5,6 +5,7 @@
     
 }
 .participantes h3{
+    text-transform: capitalize;
     font-size: .9375rem;
     border-bottom: 4px solid;
     display: inline-block;
@@ -23,4 +24,21 @@
     padding: 0 40px;
     column-gap: 7rem;
     justify-content: center;
+}
+.participantes button{
+    background-color: #6278f7;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: .9375rem;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    color: #FFF;
+    margin: 8px 0;
+}
+.participantes button:hover {
+    color: #95FFD4;
+}
+.participantes button:disabled {
+    cursor: not-allowed;
 }

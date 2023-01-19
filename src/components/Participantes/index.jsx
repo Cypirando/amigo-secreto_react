@@ -1,6 +1,6 @@
 import Participante from "../Participante";
 import "./Participantes.css";
-import Botao from "../Botao";
+// import Botao from "../Botao";
 import criarSorteio from "../../api";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useState } from "react";
@@ -11,7 +11,7 @@ const Participantes = ({ aoDeletar, colaboradores }) => {
   const location = useLocation();
   let navigate = useNavigate();
 
-  console.log(colaboradores);
+  console.log(colaboradores.length > 2);
 
   async function onClick() {
     try {
@@ -52,7 +52,7 @@ const Participantes = ({ aoDeletar, colaboradores }) => {
       {erro && <Erro message={erro} />}
       <div className="btn-sorte">
         <h3>{location.state?.nomeDoSorteio}</h3>
-        <Botao onClick={onClick} texto="Sortear" />
+        <button onClick={onClick} disabled={colaboradores.length < 2}>Sortear</button>
       </div>
       <div className="colaboradores">
         {colaboradores.map((participante, indice) => {

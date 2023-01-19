@@ -15,7 +15,7 @@ const Participante = ({ colaborador, corDeFundo, aoDeletar }) => {
 
       <div className="rodape">
         <p>{colaborador.nome}</p>
-        <p>{colaborador.email}</p>
+        <small>{colaborador.email}</small>
       </div>
     </div>
   );
