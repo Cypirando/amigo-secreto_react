@@ -67,7 +67,5 @@ Após baixar o projeto, você pode abrir com o `Vs code` ou ferramneta de ediç�
 - De um `npm install` para baixar todas dependências utilizada no desenvolvimento do projeto.
 - Por fim de um `npm start` para inicializar o sistema.
 
-## Desenvolvedores
-
-| [<img src="https://github.com/Cypirando.png" width=115><br><sub>Fábio Cypriano</sub>](https://github.com/Cypirando)  |
-| :---: | :---: 
+## Desenvolvedor
+ [<img src="https://github.com/Cypirando.png" width=115><br><sub>Fábio Cypriano</sub>](https://github.com/Cypirando)  
