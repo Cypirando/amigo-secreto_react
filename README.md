@@ -1,70 +1,70 @@
-# Getting Started with Create React App
+<h1 align="center"> Sorteio de amigo secreto </h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+<img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge"/>
+</p>
 
-## Available Scripts
 
-In the project directory, you can run:
+### Tópicos 
 
-### `npm start`
+- [Descrição do projeto](#descrição-do-projeto)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [Funcionalidades](#funcionalidades)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- [Aplicação](#aplicação)
 
-### `npm test`
+- [Ferramentas utilizadas](#ferramentas-utilizadas)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [Acesso ao projeto](#acesso-ao-projeto)
 
-### `npm run build`
+- [Abrir e rodar o projeto](#abrir-e-rodar-o-projeto)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- [Desenvolvedor](#desenvolvedor)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Descrição do projeto 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<p align="justify">
+Projeto desenvolvido para colocar em pratica e testar o conhecimento absorvido ao longo do curso de React e Node. O sistema desenvolvido tem a função de realizar um sorteio de amigo secreto.
+</p>
 
-### `npm run eject`
+## Funcionalidades
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+:heavy_check_mark: `Funcionalidade 1:` Inserir o nome do grupo para qual o sorteio ser realizado.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+:heavy_check_mark: `Funcionalidade 2:` Armazenar os nomes dos candidatos a ser inserido no formulário para então realizar o sorteio contendo o Email do participante e nome e ter a opção de corrigir caso algum participante tenha inserido a informação incorreta.
+:heavy_check_mark: `Funcionalidade 3:` Enviar a lista de nomes para uma api que irá realizar o sorteio.
+:heavy_check_mark: `Funcionalidade 4:` Receber o resultado de quem pegou quem por email.
+:heavy_check_mark: `Funcionalidade 5:` Ter a opção de dar uma sugestão de presente após receber o resultado por Email.
+## Aplicação
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<div align="center">
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+![Tela do Sistema]()
 
-## Learn More
+  </div>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+  ###
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Ferramentas utilizadas
 
-### Code Splitting
+<a href="https://reactjs.org/" target="_blank"> <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="react" width="40" height="40"/> </a> 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<a href="https://nodejs.org/en/" target="_blank"> <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" alt="node" width="40" height="40"/> </a> 
 
-### Analyzing the Bundle Size
+###
+## Acesso ao projeto
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Você pode [acessar o código fonte do projeto](https://github.com/Cypirando/amigo-secreto_react) ou [baixá-lo](https://github.com/Cypirando/amigo-secreto_react  /archive/refs/heads/main.zip).
 
-### Making a Progressive Web App
+## Abrir e rodar o projeto
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Após baixar o projeto, você pode abrir com o `Vs code` ou ferramneta de edição de prefernecia. Para isso, na tela de launcher clique em:
 
-### Advanced Configuration
+- `Abra o terminal` (Ctrl + ');
+- De um `npm install` para baixar todas dependencias ultilizada no desenvolvimento do projeto);
+- Por fim de um `npm start` para inializar o sistema.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Desenvolvedores
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+| [<img src="https://github.com/Cypirando.png" width=115><br><sub>Fábio Cypriano</sub>](https://github.com/Cypirando)  |
+| :---: | :---: 
