@@ -42,7 +42,8 @@ Projeto desenvolvido para colocar em pratica e testar o conhecimento absorvido a
 
 <div align="center">
 
-![Tela do Sistema]()
+![Tela do Sistema](https://user-images.githubusercontent.com/48137676/213458632-68bf554a-0986-4d7e-ab0f-1bc3609910f7.png)
+
 
   </div>
 
